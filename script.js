@@ -1,5 +1,5 @@
-function greetGuest() {
-  alert(`Hello friend, stay awhile and listen.`);
-}
+const switchElement = document.querySelector('.switch');
 
-setTimeout(greetGuest, 1000);
+switchElement.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
